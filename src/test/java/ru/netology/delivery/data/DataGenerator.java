@@ -17,7 +17,7 @@ public class DataGenerator {
     }
 
     public static String generateCity() {
-        var cities = new String[] {"Майкоп", "Горно-Алтайск", "Уфа", "Улан-Удэ", "Махачкала", "Магас", "Нальчик", "Элиста", "Черкесск",
+        var cities = new String[]{"Майкоп", "Горно-Алтайск", "Уфа", "Улан-Удэ", "Махачкала", "Магас", "Нальчик", "Элиста", "Черкесск",
                 "Петрозаводск", "Сыктывкар", "Симферополь", "Йошкар-Ола", "Саранск", "Якутск", "Владикавказ", "Казань", "Кызыл", "Ижевск",
                 "Абакан", "Грозный", "Чебоксары", "Барнаул", "Чита", "Петропавловск-Камчатский", "Краснодар", "Красноярск", "Пермь", "Владивосток",
                 "Ставрополь", "Хабаровск", "Благовещенск", "Архангельск", "Астрахань", "Белгород", "Брянск", "Владимир", "Волгоград", "Вологда",
@@ -32,10 +32,10 @@ public class DataGenerator {
         var faker = new Faker(new Locale(locale));
         return faker.name().lastName() + " " + faker.name().firstName();
     }
+
     public static String generatePhone(String locale) {
         var faker = new Faker(new Locale(locale));
         return faker.phoneNumber().phoneNumber();
-
     }
 
     public static class Registration {
